@@ -1,4 +1,3 @@
-/* Estilos generales */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -7,7 +6,6 @@ body {
     color: #ffffff;
 }
 
-/* Cabecera */
 header {
     display: flex;
     justify-content: space-between;
@@ -18,6 +16,7 @@ header {
     width: 100%;
     top: 0;
     left: 0;
+
 
 }
 
@@ -38,6 +37,7 @@ nav ul {
     text-decoration: none;
     display: flex;
     gap: 20px;
+    padding-right: 80px;
 }
 
 nav ul li a {
@@ -50,7 +50,6 @@ nav ul li a:hover {
     color: #38afee;
 }
 
-/* Sección Hero */
 #hero {
     height: 100vh;
     display: flex;
@@ -72,6 +71,8 @@ nav ul li a:hover {
 }
 
 
+
+
 .cta-button {
     background: #38afee;
     color: black;
@@ -85,14 +86,15 @@ nav ul li a:hover {
 .cta-button:hover {
     background: #008866;
 }
-
-/* Secciones */
 section {
     padding: 80px 10%;
     text-align: center;
 }
 
-/* Reseñas */
+
+
+
+
 .tarjetas {
     display: flex;
     flex-wrap: wrap;
@@ -101,13 +103,15 @@ section {
     margin-top: 40px;
 }
 
+
+
 .tarjeta.resena {
     background: #222;
     width: 30%;
     padding: 10px;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
-    transition: transform 0.3s;
+    transition: 0.3s;
     text-align: left;
     margin-bottom: 20px;
     
@@ -137,28 +141,15 @@ section {
 
 
 
-/* Asegurar que las tarjetas se distribuyan correctamente en 3 columnas */
-@media (min-width: 768px) {
-    .tarjeta.resena {
-        width: 30%; /* Cada tarjeta ocupa un 30% del ancho */
-    }
-}
-
-@media (max-width: 768px) {
-    .tarjeta.resena {
-        width: 100%; /* En dispositivos pequeños, las tarjetas ocupan todo el ancho */
-    }
-}
-
-/* SOBRE NOSOTROS */
 #sobre-nosotros {
-    background: rgba(255, 255, 255, 0.16);
+    background: rgba(255, 255, 255, 0.15);
     height: 200px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding-top: 0px;
     padding-bottom: 50px;
+    border-bottom: 2px solid #38afee;
     
 }
 
@@ -185,7 +176,8 @@ section {
     width: 30%;
 }
 
-/* LOGROS */
+
+
 #logros .logros {
     display: flex;
     justify-content: space-between;
@@ -194,6 +186,14 @@ section {
     margin-top: 40px;
 }
 
+.introduccion-logros {
+    font-size: 17px;
+    color: #e0e0e0;
+    margin-bottom: 30px;
+    line-height: 1.6;
+  }
+  
+
 .tarjeta-logro {
     background: #222;
     padding: 25px;
@@ -201,7 +201,7 @@ section {
     width: 23%;
     text-align: left;
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
-    transition: transform 0.3s;
+    transition: 0.3s;
 }
 
 .tarjeta-logro:hover {
@@ -212,7 +212,8 @@ section {
     color: #38afee;
 }
 
-/* METODOLOGÍA */
+
+
 .metodologias {
     display: flex;
     justify-content: space-between;
@@ -238,24 +239,20 @@ section {
     width: 90%;
 }
 
-/* FOOTER PROFESIONAL */
-
-
 .footer-container {
     display: flex;
-    justify-content: space-between;
     justify-content: center;
     flex-wrap: wrap;
     padding: 60px 10%;
     background-color: #111;
-    border-top: 2px solid #00ffcc;
+    border-top: 2px solid #38afee;
     gap: 40px;
-    
 }
 
 .footer-container > div {
     flex: 1;
     min-width: 220px;
+    text-align: center;
 }
 
 .footer-logo h2 {
@@ -269,33 +266,59 @@ section {
     color: #ccc;
 }
 
-.footer-nav h4,
-.footer-contacto h4,
+.footer-nav h4{
+    color: #38afee;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.footer-contacto h4 {
+    color: #38afee;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
 .footer-redes h4 {
     color: #38afee;
     margin-bottom: 15px;
     font-size: 16px;
 }
 
-.footer-nav ul,
+.footer-nav ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
 .footer-redes ul {
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
-.footer-nav ul li,
+.footer-nav ul li{
+    margin-bottom: 8px;
+}
+
 .footer-redes ul li {
     margin-bottom: 8px;
 }
 
-.footer-nav ul li a,
+
+.footer-nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
 .footer-redes ul li a {
     color: #fff;
     text-decoration: none;
     font-size: 14px;
 }
 
-.footer-nav ul li a:hover, .footer-redes ul li a:hover {
+.footer-nav ul li a:hover,
+.footer-redes ul li a:hover {
     color: #38afee;
 }
 
@@ -303,4 +326,120 @@ section {
     font-size: 14px;
     margin-bottom: 8px;
     color: #ccc;
+}
+
+
+@media (max-width: 1024px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        padding-right: 0;
+    }
+
+    .tarjeta-logro, .tarjeta.metodologia {
+        width: 45%;
+    }
+}
+
+
+@media (min-width: 768px) {
+    .tarjeta.resena {
+        width: 30%; 
+    }
+}
+
+@media (max-width: 768px) {
+    .tarjeta.resena {
+        width: 100%; 
+    }
+}
+
+
+@media (max-width: 768px) {
+
+
+
+    #hero h1 {
+        font-size: 30px;
+    }
+    .cta-button {
+        padding: 12px 25px;
+        font-size: 16px;
+    }
+
+    #sobre-nosotros .contenido {
+        flex-direction: column;
+        height: auto;
+    }
+    #sobre-nosotros .columna {
+        width: 100%;
+    }
+
+    .logros {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tarjeta-logro {
+        width: 100%;
+    }
+    .metodologias {
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+
+    .tarjeta.metodologia {
+        width: 100%;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    
+
+    header {
+        padding: 15px;
+    }
+
+    .logo a {
+        font-size: 20px;
+    }
+
+
+
+    nav ul li a {
+        font-size: 14px;
+    }
+
+    section {
+        padding: 60px 5%;
+    }
+
+
+
+    .cabecera-resena img.foto-usuario {
+        width: 40px;
+        height: 40px;
+    }
+
+    .tarjeta.resena {
+        padding: 10px;
+    }
+
+    .tarjeta.metodologia img {
+        width: 100%;
+    }
 }

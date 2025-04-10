@@ -1,4 +1,4 @@
-/* Estilos generales */
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -7,7 +7,7 @@ body {
     color: #ffffff;
 }
 
-/* Cabecera */
+
 header {
     display: flex;
     justify-content: space-between;
@@ -18,13 +18,13 @@ header {
     width: 100%;
     top: 0;
     left: 0;
-    z-index: 1000;
+
 }
 
 .logo {
     font-size: 24px;
     font-weight: bold;
-    color: #00ffcc;
+    color: #38afee;
 }
 
 nav ul {
@@ -40,10 +40,9 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #00ffcc;
+    color: #38afee;
 }
 
-/* Sección Contacto */
 #contacto {
     padding: 100px 10%;
     text-align: center;
@@ -51,7 +50,7 @@ nav ul li a:hover {
 
 #contacto h2 {
     font-size: 32px;
-    color: #00ffcc;
+    color: #38afee;
     margin-bottom: 20px;
 }
 
@@ -69,7 +68,17 @@ form {
     flex-direction: column;
 }
 
-form input, form textarea {
+form input{
+    margin: 10px 0;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    background: #333;
+    color: #ffffff;
+}
+
+form textarea {
     margin: 10px 0;
     padding: 12px;
     border: none;
@@ -80,10 +89,10 @@ form input, form textarea {
 }
 
 form button {
-    background: #00ffcc;
+    background: #38afee;
     cursor: pointer;
     font-weight: bold;
-    transition: background 0.3s;
+    transition: 0.3s;
     padding: 12px;
     border: none;
     border-radius: 5px;
@@ -95,20 +104,22 @@ form button:hover {
     background: #008866;
 }
 
-/* Footer */
 footer {
     background: #111;
     text-align: center;
     padding: 20px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
 }
-
 footer a {
-    color: #00ffcc;
+    color: #38afee;
     text-decoration: none;
     margin: 0 10px;
 }
 
 .logo a {
-    color: #00ffcc;
+    color: #38afee;
     text-decoration: none;
 }
