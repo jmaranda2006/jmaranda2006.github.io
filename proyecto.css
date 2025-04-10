@@ -327,119 +327,105 @@ section {
     margin-bottom: 8px;
     color: #ccc;
 }
-
-
 @media (max-width: 1024px) {
-    header {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 20px;
+    header h1 {
+        font-size: 2em;
     }
+    nav ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    nav ul li {
+        margin: 5px 10px;
+    }
+    section {
+        padding: 30px 15px;
+    }
+}
 
+@media (max-width: 768px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    header h1 {
+        font-size: 1.8em;
+        margin-bottom: 15px;
+    }
     nav ul {
         flex-direction: column;
-        gap: 10px;
-        padding-right: 0;
+        align-items: center;
     }
-
-    .tarjeta-logro, .tarjeta.metodologia {
-        width: 45%;
+    nav ul li {
+        margin: 10px 0;
     }
-}
-
-
-@media (min-width: 768px) {
-    .tarjeta.resena {
-        width: 30%; 
+    #inicio h2 {
+        font-size: 2em;
+        padding: 15px;
     }
-}
-
-@media (max-width: 768px) {
-    .tarjeta.resena {
-        width: 100%; 
+    section h2 {
+        font-size: 1.5em;
     }
-}
-
-
-@media (max-width: 768px) {
-
-
-
-    #hero h1 {
-        font-size: 30px;
+    section {
+        padding: 25px 15px;
     }
-    .cta-button {
-        padding: 12px 25px;
-        font-size: 16px;
-    }
-
-    #sobre-nosotros .contenido {
-        flex-direction: column;
-        height: auto;
-    }
-    #sobre-nosotros .columna {
-        width: 100%;
-    }
-
-    .logros {
+    footer {
         flex-direction: column;
         align-items: center;
     }
-
-    .tarjeta-logro {
-        width: 100%;
-    }
-    .metodologias {
-        flex-direction: column;
-        align-items: center;
-    }
-
-
-
-    .tarjeta.metodologia {
-        width: 100%;
-    }
-
-    .footer-container {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
+    footer div {
+        max-width: 90%;
     }
 }
 
 @media (max-width: 480px) {
-    
-
     header {
-        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
-
-    .logo a {
-        font-size: 20px;
+    header h1 {
+        font-size: 1.5em;
+        margin-bottom: 10px;
     }
-
-
-
-    nav ul li a {
-        font-size: 14px;
+    nav ul {
+        flex-direction: column;
+        align-items: center;
     }
-
-    section {
-        padding: 60px 5%;
+    nav ul li {
+        margin: 8px 0;
     }
-
-
-
-    .cabecera-resena img.foto-usuario {
-        width: 40px;
-        height: 40px;
-    }
-
-    .tarjeta.resena {
+    #inicio {
+        height: 300px;
         padding: 10px;
     }
-
-    .tarjeta.metodologia img {
+    #inicio h2 {
+        font-size: 1.5em;
+    }
+    section h2 {
+        font-size: 1.2em;
+    }
+    section {
+        padding: 20px 10px;
+    }
+    #sobre-nosotros p,
+    #logros .tarjeta,
+    #resenas .tarjeta,
+    #metodologia .tarjeta {
         width: 100%;
+        max-width: 100%;
+        margin: 10px 0;
+    }
+    .tarjeta {
+        display: block;
+        margin: 10px auto;
+    }
+    footer div {
+        max-width: 100%;
+        margin-bottom: 15px;
+    }
+    footer {
+        padding: 30px 15px;
     }
 }
