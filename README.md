@@ -133,6 +133,4 @@ Espacio previsto para mostrar un mensaje de éxito tras enviar el formulario (si
 - El formulario se adapta a móviles y pantallas pequeñas.
 - Campos apilados verticalmente y márgenes ajustados.
 
----
 
-Este README ofrece una descripción detallada de todos los componentes y estilos aplicados en el proyecto web **DevIA**, facilitando su comprensión, mantenimiento y ampliación.
